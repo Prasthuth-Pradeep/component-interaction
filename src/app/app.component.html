@@ -1,0 +1,6 @@
+<h4>Parent Component</h4>
+<ul *ngFor="let item of items">
+  <li>Child component to Parent component :{{item}}</li>
+</ul>
+
+<app-child [uname]="username" (newItemEvent)="addItem($event)"></app-child>
